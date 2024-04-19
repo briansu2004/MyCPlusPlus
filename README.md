@@ -18,6 +18,7 @@
   - [Example](#example)
   - [Example Option 1: P/Invoke](#example-option-1-pinvoke)
   - [Example Option 2: Managed C++ (C++/CLI)](#example-option-2-managed-c-ccli)
+- [Typical C++ projects today](#typical-c-projects-today)
 
 ## C++ Resume
 
@@ -382,3 +383,25 @@ private:
 In this example, `PersonWrapper` acts as a bridge between the C++ `Person` class and the C# application, providing a managed interface for interacting with the native C++ code. You would then use `PersonWrapper` in your C# application as you would any other .NET class.
 
 Choose the option that best fits your project requirements and familiarity with the technologies involved.
+
+## Typical C++ projects today
+
+In contemporary software development, C++ is still widely used in various types of projects, particularly those that require high performance, low-level system interaction, or close-to-the-hardware optimizations. Here are some typical types of C++ projects you might encounter today:
+
+1. **System Software and Tools:** C++ is often used to develop system-level software and tools, including operating systems, device drivers, firmware, and system utilities. These projects require direct interaction with hardware and low-level system APIs, making C++ well-suited for the task.
+
+2. **Game Development:** C++ remains a popular choice for game development due to its performance, efficiency, and ability to access hardware resources directly. Game engines like Unreal Engine and Unity are written in C++, and many game studios develop their games using C++ for performance-critical components such as physics, rendering, and networking.
+
+3. **Graphics and Multimedia Applications:** C++ is frequently used in the development of graphics-intensive applications, multimedia software, and digital content creation tools. Projects in this category may include computer-aided design (CAD) software, video editing tools, image processing libraries, and 3D modeling applications.
+
+4. **Embedded Systems and IoT:** C++ is commonly used in embedded systems and Internet of Things (IoT) development, where resource constraints and performance requirements are paramount. Projects in this domain may involve developing firmware for microcontrollers, real-time operating systems, sensor data processing, and control systems for embedded devices.
+
+5. **High-Performance Computing (HPC):** C++ is a popular choice for developing applications in the field of high-performance computing, including scientific simulations, numerical computing, and parallel processing. Projects in this domain leverage C++'s performance capabilities and support for parallelism (e.g., through libraries like OpenMP or MPI) to achieve optimal performance on modern hardware architectures.
+
+6. **Networking and Protocol Stacks:** C++ is used in the development of networking software, network protocol implementations, and communication libraries. Projects in this category may include network servers, clients, routers, firewalls, and middleware for distributed systems.
+
+7. **Financial and Trading Systems:** C++ is widely used in the finance industry for developing trading systems, algorithmic trading platforms, risk management software, and financial modeling tools. Projects in this domain require low latency, high throughput, and robustness, which are areas where C++ excels.
+
+8. **Cross-Platform Development:** C++ is often used for developing cross-platform applications that need to run on multiple operating systems and hardware architectures. Projects in this category may include cross-platform libraries, frameworks, or applications that target desktop, mobile, web, or embedded platforms.
+
+These are just a few examples of typical C++ projects in today's software development landscape. C++'s versatility, performance, and rich ecosystem of libraries and tools make it a popular choice for a wide range of applications and industries.

@@ -19,6 +19,10 @@
   - [Example Option 1: P/Invoke](#example-option-1-pinvoke)
   - [Example Option 2: Managed C++ (C++/CLI)](#example-option-2-managed-c-ccli)
 - [Typical C++ projects today](#typical-c-projects-today)
+- [How to use c++ to support a flash online app?](#how-to-use-c-to-support-a-flash-online-app)
+- [Unreal Engine vs Unity](#unreal-engine-vs-unity)
+  - [Unreal Engine](#unreal-engine)
+  - [Unity](#unity)
 
 ## C++ Resume
 
@@ -405,3 +409,59 @@ In contemporary software development, C++ is still widely used in various types 
 8. **Cross-Platform Development:** C++ is often used for developing cross-platform applications that need to run on multiple operating systems and hardware architectures. Projects in this category may include cross-platform libraries, frameworks, or applications that target desktop, mobile, web, or embedded platforms.
 
 These are just a few examples of typical C++ projects in today's software development landscape. C++'s versatility, performance, and rich ecosystem of libraries and tools make it a popular choice for a wide range of applications and industries.
+
+## How to use c++ to support a flash online app?
+
+Integrating C++ with a Flash online application involves using technologies and techniques for inter-process communication or remote procedure calls. Here's a high-level overview of one approach:
+
+1. **Define Communication Protocol:** Determine how the Flash application will communicate with the C++ component. This could involve using a standard protocol like HTTP or WebSocket, or a custom protocol based on sockets or named pipes.
+
+2. **C++ Server Application:** Develop a C++ server application that listens for incoming requests from the Flash application. This server can be implemented using networking libraries such as Boost.Asio or Poco, depending on your requirements.
+
+3. **Handle Requests:** Implement logic in the C++ server to handle incoming requests from the Flash application. This could involve processing data, performing calculations, accessing resources, or interacting with hardware.
+
+4. **Serialize Data:** Serialize data in a format that can be understood by both the Flash application and the C++ server. Common formats include JSON, XML, or binary serialization.
+
+5. **Send Responses:** Send responses back to the Flash application after processing requests. Ensure that responses are formatted according to the communication protocol used.
+
+6. **Flash Client Integration:** In the Flash application, use ActionScript to establish a connection with the C++ server and send requests. This can be done using the `Socket` class for low-level TCP communication or using higher-level libraries or frameworks for HTTP or WebSocket communication.
+
+7. **Handle Responses:** Implement logic in the Flash application to handle responses received from the C++ server. Parse the data and update the user interface or perform any necessary actions based on the server's response.
+
+8. **Error Handling and Security:** Implement error handling and security measures to handle unexpected scenarios and protect against potential vulnerabilities such as injection attacks or unauthorized access.
+
+9. **Testing and Debugging:** Test the integration between the Flash application and the C++ server thoroughly to ensure that communication is reliable and responses are handled correctly. Use debugging tools and logging to diagnose and fix any issues that arise during development.
+
+By following these steps, you can integrate a C++ component with a Flash online application to support additional functionality, data processing, or interactions that are not feasible to implement solely within the Flash environment.
+
+## Unreal Engine vs Unity
+
+Unreal Engine and Unity are two of the most popular game engines used by developers worldwide. Both engines offer powerful tools and features for creating games and interactive experiences, but they have differences in terms of their strengths, target audience, and licensing models. Here's a comparison between Unreal Engine and Unity:
+
+### Unreal Engine
+
+1. **Graphics and Rendering:** Unreal Engine is known for its high-fidelity graphics and rendering capabilities. It uses a physically-based rendering (PBR) pipeline, which results in realistic lighting, materials, and effects out of the box.
+
+2. **Blueprint Visual Scripting:** Unreal Engine offers a visual scripting system called Blueprints, which allows designers and artists to create gameplay mechanics and interactive content without writing code. It's user-friendly and accessible to non-programmers.
+
+3. **C++ Programming:** Unreal Engine provides full access to the source code and allows developers to extend and customize the engine using C++. This makes it suitable for projects that require low-level optimizations and deep integration with the engine.
+
+4. **AAA Quality Games:** Unreal Engine is commonly used for developing high-budget, AAA-quality games with stunning visuals and complex gameplay mechanics. It has been used to create notable titles such as Fortnite, Gears of War, and Unreal Tournament.
+
+5. **Royalty-based License:** Unreal Engine is available under a royalty-based license model, where developers pay a royalty to Epic Games based on their game's revenue after it reaches a certain threshold.
+
+### Unity
+
+1. **Ease of Use:** Unity is known for its ease of use and beginner-friendly interface. It has a large and active community with extensive documentation, tutorials, and resources available for beginners and experienced developers alike.
+
+2. **Cross-Platform Support:** Unity supports a wide range of platforms, including PC, consoles, mobile devices, VR/AR, and web browsers. Developers can build their games once and deploy them to multiple platforms with minimal effort.
+
+3. **Scripting Languages:** Unity supports multiple programming languages, including C#, JavaScript, and Boo. C# is the most commonly used language in Unity development and offers a balance of performance and productivity.
+
+4. **2D and 3D Development:** Unity is well-suited for both 2D and 3D game development, with robust tools and features for creating immersive experiences in both dimensions.
+
+5. **Indie and Mobile Games:** Unity is popular among indie developers and small studios for its accessibility, affordability, and flexibility. It has been used to create a wide variety of games, from small indie titles to successful mobile games like Monument Valley and Pokémon GO.
+
+6. **Flexible Licensing Options:** Unity offers flexible licensing options, including free licenses for small developers and affordable subscription plans for larger teams. It also provides additional services and features through Unity Pro and Unity Enterprise subscriptions.
+
+In summary, Unreal Engine is often preferred for projects requiring high-fidelity graphics, complex gameplay mechanics, and AAA-quality experiences, while Unity is popular among indie developers, small studios, and mobile game developers for its ease of use, cross-platform support, and flexible licensing options. The choice between Unreal Engine and Unity depends on factors such as project requirements, team expertise, budget, and target audience.
